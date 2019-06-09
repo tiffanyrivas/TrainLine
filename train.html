@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset ="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Who is John Galt? </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel ="stylesheet" type="text/css" href="style.css"> 
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+ 
+ <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+<body>
+
+<div class ="container">
+
+<div class ="jumbotron">
+  <h1 class="text-center">John Galt Line</h1>
+  <h3 class="text-center">Safe Travels</h3>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+   
+    <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><strong>Train Times:</strong></h3>
+        </div>
+        <div class="panel-body">
+          <table class="table table-hover" id='trainTable'>
+            
+            
+            <thead>
+              <tr>
+                <th>Train Line</th>
+                <th>Destination</th>
+                <th>Next Arrival</th>
+                <th>Interval</th>
+                <th>Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"><strong>Add Train Line</strong></h3>
+        </div>
+
+        <div class="panel-body">
+        <form>
+          <div class="form-group">
+            <label for="">Train Line</label>
+            <input type="text" class="form-control" id="trainLine">
+          </div>
+
+          <div class="form-group">
+            <label for="">Destination</label>
+            <input type="text" class="form-control" id="destination">
+          </div>
+
+          <div class="form-group">
+            <label for=""> Train Time HH:MM </label>
+            <input type="text" class="form-control" id="time">
+          </div>
+
+          <div class="form-group">
+            <label for="">Interval</label>
+            <input type="text" class="form-control" id="frequency">
+          </div>
+        
+          <button type="submit" class="btn btn-info" id="addTrainBtn">
+                <span class="glyphicon glyphicon-send" aria-hidden="true"></span> Submit</button>
+        </form>
+            
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src='train.js'></script>
+</body>
+</html>
